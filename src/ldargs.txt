@@ -1,0 +1,1 @@
+arm-mingw32ce-ld -Bdynamic /opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib/crt3.o -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0 -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib wintest.o -lstdc++ -lmingw32 -lgcc -lceoldname -lmingwex -lcoredll -lcoredll -lmingw32 -lgcc -lceoldname -lmingwex -lcoredll

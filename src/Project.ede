@@ -1,0 +1,19 @@
+;; Object wintest
+;; EDE project file.
+(ede-proj-project "wintest"
+  :name "wintest"
+  :file "Project.ede"
+  :targets (list 
+   (ede-proj-target-makefile-program "main"
+    :name "wintest"
+    :path ""
+    :source '("wintest.cpp")
+    :compiler 'ede-arm-mingw32ce-g++-compiler
+    :linker 'ede-arm-mingw32ce-ld-linker
+    :configuration-variables '(("release" ("LDFLAGS" . "-Bdynamic /opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib/crt3.o -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0 -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib")) ("debug" ("LDFLAGS" . "-Bdynamic /opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib/crt3.o -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0 -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib")))
+    :ldlibs '("stdc++" "mingw32" "gcc" "ceoldname" "mingwex" "coredll" "mingw32")
+    :ldflags '("-Bdynamic /opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib/crt3.o -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0 -L/opt/mingw32ce/lib/gcc/arm-mingw32ce/4.1.0/../../../../arm-mingw32ce/lib -lstdc++ -lmingw32 -lgcc -lceoldname -lmingwex -lcoredll -lcoredll -lmingw32 -lgcc -lceoldname -lmingwex -lcoredll")
+    )
+   )
+  :configuration-variables 'nil
+  )

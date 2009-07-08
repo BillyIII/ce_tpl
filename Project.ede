@@ -1,0 +1,13 @@
+;; Object wintest
+;; EDE project file.
+(ede-proj-project "wintest"
+  :name "wintest"
+  :file "Project.ede"
+  :targets (list 
+   (ede-proj-target-makefile-miscelaneous "wintest_root"
+    :name "wintest_root"
+    :path ""
+    :source '("README")
+    )
+   )
+  )

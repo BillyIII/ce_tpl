@@ -1,11 +1,11 @@
-;; Object wintest
+;; Object %PRJNAME%
 ;; EDE project file.
-(ede-proj-project "wintest"
-  :name "wintest"
+(ede-proj-project "%PRJNAME%"
+  :name "%PRJNAME%"
   :file "Project.ede"
   :targets (list 
-   (ede-proj-target-makefile-miscelaneous "wintest_root"
-    :name "wintest_root"
+   (ede-proj-target-makefile-miscelaneous "%PRJNAME%_root"
+    :name "%PRJNAME%_root"
     :path ""
     :source '("README")
     )
